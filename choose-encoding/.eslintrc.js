@@ -7,8 +7,9 @@ module.exports = {
         "eslint:recommended",
         "plugin:react/recommended",
         "plugin:@typescript-eslint/recommended",
-        "airbnb-base"
-    ],
+        "plugin:prettier/recommended",
+        "airbnb-base",
+        ],
     "overrides": [
     ],
     "parser": "@typescript-eslint/parser",
@@ -22,6 +23,14 @@ module.exports = {
         "@typescript-eslint"
     ],
     "rules": {
+        "prettier/prettier": ["error", {
+            "singleQuote": true,
+            "semi": true,
+            "useTabs": false,
+            "tabWidth": 2,
+            "trailingComma": "all",
+            "printWidth": 80
+        }],
     },
     "settings":{
         "react":{
