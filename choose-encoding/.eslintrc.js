@@ -8,7 +8,8 @@ module.exports = {
         "plugin:react/recommended",
         "plugin:@typescript-eslint/eslint-recommended",
         "plugin:prettier/recommended",
-        "airbnb-base"
+        "airbnb",
+        "airbnb-typescript"
         ],
     "overrides": [
     ],
@@ -31,7 +32,8 @@ module.exports = {
             "tabWidth": 2,
             "trailingComma": "es5",
             "printWidth": 80}],
-        "comma-dangle" : "off"
+            "comma-dangle": "off",
+            "@typescript-eslint/comma-dangle": "off"
     },
     "settings":{
         "react":{
