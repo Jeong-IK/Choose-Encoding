@@ -6,14 +6,15 @@ module.exports = {
     "extends": [
         "eslint:recommended",
         "plugin:react/recommended",
-        "plugin:@typescript-eslint/recommended",
+        "plugin:@typescript-eslint/eslint-recommended",
         "plugin:prettier/recommended",
-        "airbnb-base",
+        "airbnb-base"
         ],
     "overrides": [
     ],
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
+        "project" : "./tsconfig.json",
         "ecmaVersion": "latest",
         "sourceType": "module",
 
@@ -28,13 +29,16 @@ module.exports = {
             "semi": true,
             "useTabs": false,
             "tabWidth": 2,
-            "trailingComma": "all",
-            "printWidth": 80
-        }],
+            "trailingComma": "es5",
+            "printWidth": 80}],
+        "comma-dangle" : "off"
     },
     "settings":{
         "react":{
             "version":"detect"
-        }
+        },
+        "import/parsers": {
+            "@typescript-eslint/parser": [".ts", ".tsx"]
+          },
     }
 }
