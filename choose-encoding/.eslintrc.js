@@ -33,7 +33,11 @@ module.exports = {
             "trailingComma": "es5",
             "printWidth": 80}],
             "comma-dangle": "off",
-            "@typescript-eslint/comma-dangle": "off"
+            "@typescript-eslint/comma-dangle": "off",
+            "react/function-component-definition": [2, { "namedComponents": "arrow-function" }],
+            "import/prefer-default-export":"off",
+            "arrow-body-style": ["error", "always"]
+            
     },
     "settings":{
         "react":{

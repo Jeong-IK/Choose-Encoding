@@ -1,11 +1,14 @@
 import React from 'react';
+import { Header } from './Components/Header';
+import { Body } from './Components/Body';
 
-function App() {
+const App = () => {
   return (
     <div>
-      <h1>New Project - Happy BirthDay!! Choose_Encoding!!</h1>
+      <Header />
+      <Body />
     </div>
   );
-}
+};
 
 export default App;
